@@ -1,0 +1,259 @@
+h1{
+  font-size: 30px !important;}
+.container {
+  margin-top: 35px;
+  padding: 0 17px !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.btn-fixo a,
+.btn-fixo button {
+  background: linear-gradient(0deg, var(--base2), #bd5d38a8);
+  color: white;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+.bold{
+    font-weight: bold;
+}
+.text-left{
+    text-align: left !important;
+}
+.btn-fixo {
+  position: fixed;
+  bottom: 100px;
+  right: 105px;
+}
+
+.btn-fixo a:hover,
+.btn-fixo button:hover {
+  opacity: .8;
+  color: white;
+}
+
+.img-usuario img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tabela-usuarios td {
+  text-align: center;
+  line-height: 3;
+}
+
+.tabela-usuarios th {
+  text-align: center;
+}
+.img-usuario-page img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.color-black{
+    color: #343a40;
+}
+/*.container .nav-item h2{
+  color: rgba(255, 255, 255, 0.55);
+}*/
+
+/*=============================================================Usuario=======================================================================*/
+.scroll-table {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+/*=============================================================Estoque=======================================================================*/
+.all-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-estoque-mes {
+    width: 30%;
+    text-align: center;
+    margin: 40px 12px 0 12px;
+    padding: 28px;
+    border-radius: 11px;
+    transition: .3s;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+}
+.container-item {
+    width: 70%;
+}
+
+.container-cadastrar-item {
+    width: 24%;
+    padding: 28px;
+    border-radius: 11px;
+    transition: .3s;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    position: fixed;
+    right: 16px;
+}
+
+.card-estoque-mes.card-item {
+    width: 45%;
+}
+
+.card-estoque-mes.card-item h2 {font-size: 16px;text-align: left;font-weight: 400;color: #6c757d;text-transform: capitalize;}
+.card-estoque-mes.card-item p {
+    text-align: left;
+}
+.card-estoque-mes.card-item h2 span, .card-estoque-mes.card-item p span {
+    font-weight: bold;
+}
+.voltar-pagina {
+    margin: 35px 0 0 4px;
+}
+.voltar-pagina a {
+    color: #bd5d38;
+    font-weight: bold;
+}
+.card-estoque-mes.card-estoque p {
+    font-size: 20px;
+    color: #343a40;
+}
+.card-estoque-mes h2 span {
+    font-weight: normal;
+}
+
+/*=============================================================Pedido=======================================================================*/
+.card-popup-status-pedido {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.popup-status-pedido {
+    max-width: 52%;
+    margin: 0 auto;
+    height: 22%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#alterar-status-pedido {width: 100%;display: flex;justify-content: center;margin: 11px auto;}
+
+.popup-status-pedido label {
+    color: white;
+    font-size: 20px;
+}
+.btn-primary:hover {
+    color: white !important;
+}
+.card-pedido {
+    font-size: 14px;
+}
+.status-pedido {
+    position: relative;
+}
+
+.status-pedido {
+    font-size: 10px;
+    background: #000;
+    color: #f3f3f3;
+    border-radius: 30px;
+    padding: 2px 6px;
+    font-weight: bold;
+    width: 10px;
+    height: 10px;
+}
+.color-status-aguardando{
+    background: orange;
+}
+.color-status-visualizado{
+    background: green;
+}
+.color-status-finalizado{
+    background: red;
+}
+.ajax_load{
+    display: none;
+}
+#cancelar-popup {
+    position: absolute;
+    right: 33px;
+    top: 68px;
+    font-size: 35px;
+}
+/*=============================================================Tablet=======================================================================*/
+@media (min-width: 767.9px){
+    .card-estoque-mes{
+        width: 46%;
+    }
+}
+/*=============================================================Mobile=======================================================================*/
+@media (max-width: 768px){
+    .card-estoque-mes.card-item{
+        width: 100%;
+    }
+    .container-item {
+        width: 100%;
+    }
+    .container-cadastrar-item {
+        position: relative;
+        text-align: center;
+        margin: 13px auto;
+        padding: 28px;
+        border-radius: 11px;
+        transition: .3s;
+        width: 90%;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+        right: 0;
+    }
+    .card-estoque-mes{
+        width: 100%;
+    }
+    .btn-fixo{
+        right: 0;
+        bottom: 9px;
+    }
+}
+
+
+a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
+}
+
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  width:394px;
+  z-index:50;
+  padding: 25px 25px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
